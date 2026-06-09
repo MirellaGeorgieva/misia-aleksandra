@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Мисия Александра 25</title>
+  <meta charset="UTF-8">
+  <title>Мисия Александра</title>
 </head>
-<body>
-<h1>🎂 Мисия Александра 25</h1>
-<p>Сайтът работи!</p>
+
+<body style="font-family: Arial; text-align:center; padding:20px;">
+
+<h1>🎂 Мисия Александра</h1>
+
+<div id="game"></div>
+
+<button onclick="nextLevel()">Следващо ниво</button>
+
+<script>
+
+let level = 1;
+
+function showLevel() {
+
+if (level == 1) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 1 📍</h2>
+<p>ул. Пенчо Славейков</p>
+<p>☕ Кафе Арсенал</p>
+<p>Задача: снимка пред заведението</p>
+`;
+}
+
+else if (level == 2) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 2 ☕</h2>
+<p>Отлична работа, агент Александра</p>
+<p>Работното ѝ място</p>
+<p>Задача: селфи</p>
+`;
+}
+
+else if (level == 3) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 3 🗺</h2>
+<p>Любен Каравелов</p>
+<p>Къщата на съпруга</p>
+<p>Намери плик</p>
+`;
+}
+
+else if (level == 4) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 4</h2>
+<p>Намери нещо червено</p>
+`;
+}
+
+else if (level == 5) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 5</h2>
+<p>Коя година се запознахме?</p>
+<input placeholder="Отговор">
+`;
+}
+
+else if (level == 6) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 6</h2>
+<p>Снимка от детството</p>
+`;
+}
+
+else if (level == 7) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 7</h2>
+<p>Пейка. 30 секунди. Усмивка.</p>
+`;
+}
+
+else if (level == 8) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 8</h2>
+<p>Кой винаги закъснява? 😄</p>
+`;
+}
+
+else if (level == 9) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 9</h2>
+<p>Стара снимка</p>
+`;
+}
+
+else if (level == 10) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 10</h2>
+<p>Най-смешна физиономия</p>
+`;
+}
+
+else if (level == 11) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 11</h2>
+<p>Намери куче 🐶</p>
+`;
+}
+
+else if (level == 12) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 12</h2>
+<p>Една дума за 25 години</p>
+`;
+}
+
+else if (level == 13) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 13</h2>
+<p>Съобщение от бъдещето ✨</p>
+`;
+}
+
+else if (level == 14) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 14</h2>
+<p>Кой го е написал?</p>
+`;
+}
+
+else if (level == 15) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 15</h2>
+<p>Мини викторина</p>
+`;
+}
+
+else if (level == 16) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 16 🗺</h2>
+<p>Карта 2</p>
+`;
+}
+
+else if (level == 17) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 17</h2>
+<p>Предмет с А</p>
+`;
+}
+
+else if (level == 18) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 18</h2>
+<p>Любимо място в Стражица</p>
+`;
+}
+
+else if (level == 19) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 19</h2>
+<p>Кажи “Днес съм на 25!”</p>
+`;
+}
+
+else if (level == 20) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 20</h2>
+<p>Близо до финала...</p>
+`;
+}
+
+else if (level == 21) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 21</h2>
+<p>Кристина, Йоанна, Йоана, Мирелла</p>
+`;
+}
+
+else if (level == 22) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 22</h2>
+<p>Всички водят към едно място</p>
+`;
+}
+
+else if (level == 23) {
+document.getElementById("game").innerHTML = `
+<h2>Ниво 23</h2>
+<p>Кои са организаторите?</p>
+`;
+}
+
+else if (level == 24) {
+document.getElementById("game").innerHTML = `
+<h1>🎉 ФИНАЛ 🎉</h1>
+<p>Честит 25-ти рожден ден, Александра!</p>
+<p>Обърни се 😊</p>
+<p>Кристина · Йоанна · Йоана · Мирелла</p>
+`;
+}
+
+}
+
+function nextLevel() {
+level++;
+showLevel();
+}
+
+showLevel();
+
+</script>
+
 </body>
 </html>
